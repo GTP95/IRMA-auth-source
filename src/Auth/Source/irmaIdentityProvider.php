@@ -1,6 +1,5 @@
 <?php
 namespace SimpleSAML\Module\IRMAidp\Auth\Source;
-include "vendor/autoload.php";
 
 //Class irmaIdentityProvider to authenticate the user using IRMA
 class irmaIdentityProvider extends \SimpleSAML\Auth\Source {
