@@ -593,7 +593,7 @@ $config = [
     'module.enable' => [
         // Setting to TRUE enables.
         'authgoogle' => $GOOGLE_ENABLE,
-        'simplesamlphp-module-irmaidentity' => $IRMA_ENABLE,
+        'IRMAidp' => $IRMA_ENABLE,
     ],
 
 
