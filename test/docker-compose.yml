@@ -13,3 +13,4 @@ services:
       - ./resources/favicon-32x32.png:/data/vendor/simplesamlphp/simplesamlphp/www/favicon.png
       - ./resources/cert:/data/vendor/simplesamlphp/simplesamlphp/cert
       - ./resources/config:/data/vendor/simplesamlphp/simplesamlphp/config
+      - ./resources/composer.json:/data/composer.json
