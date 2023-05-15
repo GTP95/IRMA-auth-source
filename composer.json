@@ -9,6 +9,6 @@
     "irma/requestor": "dev-master"
   },
   "extra": {
-    "ssp-mixedcase-module-name": "simplesamlphp-module-irmaidentity"
+    "ssp-mixedcase-module-name": "IRMAidp"
   }
 }
