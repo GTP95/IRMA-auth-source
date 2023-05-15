@@ -2,7 +2,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/GTP95/simplesamlphp-module-irmaidentity"
+      "url": "https://github.com/GTP95/irma-requestor"
     }
   ],
   "autoload": {
