@@ -1,4 +1,7 @@
 {
+  "name": "gtp95/simplesamlphp-module-irmaidentity",
+  "description": "SimpleSAMLphp module for IRMA authentication.",
+  "type": "simplesamlphp-module",
   "repositories": [
     {
       "type": "vcs",
