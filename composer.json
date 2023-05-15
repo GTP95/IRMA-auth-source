@@ -5,6 +5,11 @@
       "url": "https://github.com/GTP95/simplesamlphp-module-irmaidentity"
     }
   ],
+  "autoload": {
+    "psr-4": {
+      "SimpleSAML\\Module\\irmaidentity\\": "src/"
+    }
+  },
   "require": {
     "irma/requestor": "dev-master"
   }
