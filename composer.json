@@ -8,11 +8,7 @@
       "url": "https://github.com/GTP95/irma-requestor"
     }
   ],
-  "autoload": {
-    "psr-4": {
-      "SimpleSAML\\Module\\irmaidentity\\": "src/"
-    }
-  },
+
   "require": {
     "irma/requestor": "dev-master"
   }
