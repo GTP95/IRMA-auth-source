@@ -341,7 +341,7 @@ $config = [
     ],
     */
     'irma' => array(
-        'IRMAidp:irmaIdentityProvider',
+        'simplesamlphp-module-irmaidentity:irmaIdentityProvider',
         'irma_api_server' => 'https://example.com',
         'irma_web_server' => 'https://example.com',
         'jwt_privatekeyfile' => 'surfnet-idp-sk.pem',
