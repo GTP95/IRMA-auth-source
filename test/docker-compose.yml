@@ -11,3 +11,5 @@ services:
     volumes:
       - ./resources/config/config.php:/var/simplesamlphp/config/config.php
       - ./resources/config/authsources.php:/var/simplesamlphp/config/authsources.php
+      - ./resources/cert:/var/simplesamlphp/cert
+      - ./resources/config/saml20-idp-hosted.php:/var/simplesamlphp/metadata/saml20-idp-hosted.php
