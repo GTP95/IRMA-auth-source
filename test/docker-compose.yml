@@ -10,4 +10,4 @@ services:
       - 8080:80
     volumes:
       - ./resources/config/config.php:/var/simplesamlphp/config/config.php
-      - ./resources/config/authsources.php:/var/simplsesamlphp/config/authsources.php
+      - ./resources/config/authsources.php:/var/simplesamlphp/config/authsources.php
