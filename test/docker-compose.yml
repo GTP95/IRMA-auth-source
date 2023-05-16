@@ -7,7 +7,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - 8080:80
-    env_file:
     volumes:
       - ./resources/config/config.php:/var/simplesamlphp/config/config.php
       - ./resources/config/authsources.php:/var/simplsesamlphp/config/authsources.php
