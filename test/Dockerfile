@@ -8,7 +8,10 @@ RUN wget https://github.com/simplesamlphp/simplesamlphp/releases/download/v2.0.4
 RUN tar xf simplesamlphp-2.0.4.tar.gz
 RUN mv simplesamlphp-2.0.4 simplesamlphp
 RUN rm simplesamlphp-2.0.4.tar.gz
-COPY resources/config/simplesamlphp.conf /etc/apache2/sites-available
-RUN a2ensite simplesamlphp 
+COPY resources/config/vhost.conf /etc/apache2/sites-available/vhost.conf
+# remove default config to prevent conflicts, the new one works as a single config
+RUN a2dissite 000-default 
+RUN a2enmod rewrite
+RUN a2ensite vhost
 EXPOSE 80/tcp
 CMD apachectl -D FOREGROUND
