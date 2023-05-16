@@ -11,3 +11,4 @@ RUN rm simplesamlphp-2.0.4.tar.gz
 COPY resources/config/simplesamlphp.conf /etc/apache2/sites-available
 RUN a2ensite simplesamlphp 
 EXPOSE 80/tcp
+CMD apachectl -D FOREGROUND
