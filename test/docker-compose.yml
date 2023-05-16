@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      image: identityprovider
+    image: identityprovider
     ports:
       - 8080:80
     volumes:
