@@ -2,6 +2,15 @@
   "name": "gtp95/simplesamlphp-module-irmaidentity",
   "description": "SimpleSAMLphp module for IRMA authentication.",
   "type": "simplesamlphp-module",
+  "keywords": ["simplesamlphp", "irma", "authentication"],
+  "license": "AGPL-3.0-or-later",
+
+  "autoload": {
+    "psr-4": {
+      "SimpleSAML\\Module\\irmaidentity\\": "src/"
+    }
+  },
+
   "repositories": [
     {
       "type": "vcs",
