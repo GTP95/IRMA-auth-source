@@ -22,16 +22,16 @@ $metadata['urn:x-simplesamlphp:example-idp'] = [
      * Authentication source to use. Must be one that is configured in
      * 'config/authsources.php'.
      */
-    'auth' => 'example-userpass',
+    'auth' => 'irma',
 
     /* Uncomment the following to use the uri NameFormat on attributes. */
-    /*
+    
     'attributes.NameFormat' => 'urn:oasis:names:tc:SAML:2.0:attrname-format:uri',
     'authproc' => [
         // Convert LDAP names to oids.
         100 => ['class' => 'core:AttributeMap', 'name2oid'],
     ],
-    */
+    
 
     /*
      * Uncomment the following to specify the registration information in the

@@ -543,7 +543,8 @@ $config = [
         'exampleauth' => false,
         'core' => true,
         'admin' => true,
-        'saml' => true
+	'saml' => true,
+	'simplesamlphp-module-irmaidentity' => true
     ],
 
 

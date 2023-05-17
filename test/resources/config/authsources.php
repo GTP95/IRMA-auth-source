@@ -67,6 +67,10 @@ $config = [
         */
     ],
 
+    'irma' => [
+	'simplesamlphp-module-irmaidentity:irmaIdentityProvider'
+    ]
+
     /*
     'example-sql' => [
         'sqlauth:SQL',
