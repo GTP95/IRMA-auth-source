@@ -1,0 +1,16 @@
+---
+version: "3"
+services:
+  identityprovider:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: identityprovider
+    ports:
+      - 8080:80
+    volumes:
+      - ./resources/config/config.php:/var/simplesamlphp/config/config.php
+      - ./resources/config/authsources.php:/var/simplesamlphp/config/authsources.php
+      - ./resources/cert:/var/simplesamlphp/cert
+      - ./resources/config/saml20-idp-hosted.php:/var/simplesamlphp/metadata/saml20-idp-hosted.php
+      - ./resources/composer.json:/var/simplesamlphp/composer.json
