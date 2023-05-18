@@ -27,7 +27,8 @@ RUN php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 # Install my module
 COPY . /simplesamlphp-module-irmaidentity/
 WORKDIR /var/simplesamlphp
-RUN composer require gtp95/simplesamlphp-module-irmaidentity:dev-master
-
+RUN COMPOSER_ALLOW_SUPERUSER=1 composer config repositories.local path /simplesamlphp-module-irmaidentity
+RUN COMPOSER_ALLOW_SUPERUSER=1 composer config minimum-stability dev
+RUN COMPOSER_ALLOW_SUPERUSER=1 composer require gtp95/simplesamlphp-module-irmaidentity:dev-main
 EXPOSE 80/tcp
 CMD apachectl -D FOREGROUND
