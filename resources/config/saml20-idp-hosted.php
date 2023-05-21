@@ -15,8 +15,8 @@ $metadata['https://pep.cs.ru.nl/saml-idp'] = [
     'host' => '__DEFAULT__',
 
     // X.509 key and certificate. Relative to the cert directory.
-    'privatekey' => 'server.pem',
-    'certificate' => 'server.crt',
+    'privatekey' => 'file://pep.cs.ru.nl.pem',
+    'certificate' => 'file://pep.cs.ru.nl.crt',
 
     /*
      * Authentication source to use. Must be one that is configured in
