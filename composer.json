@@ -19,6 +19,8 @@
   ],
 
   "require": {
-    "irma/requestor": "dev-master"
+    "irma/requestor": "dev-master",
+    "ext-curl": "*",
+    "bacon/bacon-qr-code": "^2.0"
   }
 }
