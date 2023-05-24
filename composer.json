@@ -21,6 +21,6 @@
   "require": {
     "irma/requestor": "dev-master",
     "ext-curl": "*",
-    "bacon/bacon-qr-code": "^2.0"
+    "endroid/qr-code": "^4.8"
   }
 }
