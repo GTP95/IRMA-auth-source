@@ -3,7 +3,7 @@ FROM php:8.2-apache
 # Install dependencies (SimpleSAMLphp's and composer's)
 RUN apt-get update && apt-get -y upgrade && apt-get -y install wget unzip
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
-RUN chmod +x /usr/local/bin/install-php-extensions && install-php-extensions intl session
+RUN chmod +x /usr/local/bin/install-php-extensions && install-php-extensions intl gd
 
 # Install SimpleSAMLphp
 # In this case, ADD doesn't work. So I'm downloading and extracting "manually"
