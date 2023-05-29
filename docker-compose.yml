@@ -14,3 +14,10 @@ services:
       - ./resources/cert:/var/simplesamlphp/cert
       - ./resources/config/saml20-idp-hosted.php:/var/simplesamlphp/metadata/saml20-idp-hosted.php
       - ./resources/composer.json:/var/simplesamlphp/composer.json
+    networks: 
+      - irma-network
+
+
+networks:
+  irma-network:
+    external: true
