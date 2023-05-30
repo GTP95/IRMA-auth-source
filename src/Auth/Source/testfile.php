@@ -15,7 +15,7 @@ $json='{
   "@context": "https://irma.app/ld/request/disclosure/v2",
   "disclose": [
     [
-        [ "irma-demo.PEP.id" ]
+        [ "irma-demo.PEP.id.id" ]
     ]
     ]
 }';
@@ -45,7 +45,7 @@ $qrCode = Builder::create()
     ->size(300)
     ->margin(10)
     ->roundBlockSizeMode(new RoundBlockSizeModeMargin())
-    ->labelText('Scan this QR code with the IRMA app')
+    ->labelText('Scan this QR code with the Yivi app')
     ->labelFont(new NotoSans(10))
     ->labelAlignment(new LabelAlignmentCenter())
     ->build();
@@ -53,23 +53,7 @@ $qrCode = Builder::create()
 $dataUri = $qrCode->getDataUri();
 
 //display the qr code
-echo '<img src="'.$dataUri.'">';
+echo '<HTML lang="en"><img src="'.$dataUri.'" alt="A QR-code to authenticate with the Yivi app">';
 
-while (true) {
-    echo "polling";
-    //poll session to see if it is done
-    $ch = curl_init('http://localhost:8088/session/'.$token."/status");   //TODO: load URL from config file
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-        'Content-Type: application/json'
-    ));
-    $result= curl_exec($ch);
-    $status= json_decode($result, true)["status"];
-    curl_close($ch);
-    echo $status;
-    if ($status == "DONE") {
-        break;
-    }
-    //wait 1 second before polling again
-    sleep(1);
-}
+
+
