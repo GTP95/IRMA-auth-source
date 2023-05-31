@@ -110,6 +110,8 @@ if($decodedResult["proofStatus"] != "VALID") {
 
 $disclosed= $decodedResult["disclosed"][0][0]["rawvalue"];
 echo "<p>Disclosed attributes: $disclosed</p>";
+var_dump($_GET['authStateId']);
 flush();
+SimpleSAML\Module\irmaidentity\Auth\Source\irmaIdentityProvider::attributeCallback($disclosed, $_GET['authStateId']);
 
 
