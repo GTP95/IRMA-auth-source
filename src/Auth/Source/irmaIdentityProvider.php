@@ -4,7 +4,7 @@ namespace SimpleSAML\Module\irmaidentity\Auth\Source;
 //Class irmaIdentityProvider to authenticate the user using IRMA
 use http\Env\Response;
 //dependencies for qr-code generation
-require_once __DIR__ . '../../../../vendor/autoload.php';
+require_once '../vendor/autoload.php';
 
 class irmaIdentityProvider extends \SimpleSAML\Auth\Source {
 
