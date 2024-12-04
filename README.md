@@ -1,5 +1,8 @@
-# IRMA authentication for SimpleSAMLphp
+# Yivi authentication for SimpleSAMLphp
 ## or, How To Reinvent the Wheel Once Again
+
+## ABANDONED
+This repository is abandoned in a non-working state and archived just in case someone finds it useful as a starting point to develop an Yivi plugin for SimpleSAMLphp.
 
 ## Docker configuration
 The following is how to create a Docker container for *testing*. It can be used as a base for a production environment too, but it may require some additional work, refer to SimpleSAMLphp'sn documentation.  
